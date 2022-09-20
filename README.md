@@ -1,1 +1,6 @@
-# best_algorithms_solutions
+# Best Algorithms Solutions
+
+- Arrat
+- Object
+- String
+- Function
