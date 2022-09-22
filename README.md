@@ -15,8 +15,9 @@
 - Compare
 ## String
 - Reverse string
-- Capitalize
+- Capitalize firs latter
 - Count vowels
 - Remove duplicates
+- Capitalize all strings
 ## Function
 - Pause
