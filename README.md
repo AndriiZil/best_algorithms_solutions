@@ -10,14 +10,34 @@
 - Sort by pair
 - Delete duplicates
 - Compare
+- Intersection
+- Flatten
+- Max frequency
+- Is subset
+- Fibonacci
+
 ## Object
 - Delete property by name
 - Compare
+
 ## String
 - Reverse string
 - Capitalize firs latter
 - Count vowels
 - Remove duplicates
 - Capitalize all strings
+- Is balanced
+- Palindrome
+- Is unique
+- Remove dupes
+- Max char
+- Count chars
+- Is string rotated
+
 ## Function
+- Map
+- Filter
+- Find
+
+## Promise
 - Pause
