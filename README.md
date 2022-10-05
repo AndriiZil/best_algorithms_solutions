@@ -16,6 +16,7 @@
 - Is subset
 - Fibonacci
 - Chunk
+- Reduce
 
 ## Object
 - Delete property by name
