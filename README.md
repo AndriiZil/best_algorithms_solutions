@@ -15,6 +15,7 @@
 - Max frequency
 - Is subset
 - Fibonacci
+- Chunk
 
 ## Object
 - Delete property by name
@@ -33,6 +34,7 @@
 - Max char
 - Count chars
 - Is string rotated
+- Fizz Buzz
 
 ## Function
 - Map
