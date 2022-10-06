@@ -17,6 +17,7 @@
 - Fibonacci
 - Chunk
 - Reduce
+- Binary search
 
 ## Object
 - Delete property by name
