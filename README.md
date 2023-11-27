@@ -18,6 +18,11 @@
 - Chunk
 - Reduce
 - Binary search
+- Return the largest numbers in array
+- Falsy bouncer
+- Diff two arrays
+- Seek & Destroyed
+- Wherefore Art Thou
 
 ## Object
 - Delete property by name
@@ -37,6 +42,15 @@
 - Count chars
 - Is string rotated
 - Fizz Buzz
+- Find & replace
+- Find the longest world in the string
+- Confirm the ending
+- Repeat a string
+- Truncate a string
+- Mutation
+- Spinal tap case
+- Missing letter
+- Is Balanced
 
 ## Function
 - Map
@@ -45,3 +59,8 @@
 
 ## Promise
 - Pause
+
+## Mathematic
+- Convert celsius to fahrenheit
+- Factorial
+- Sum all numbers in a range
