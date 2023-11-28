@@ -4,7 +4,7 @@ Array.prototype.myFind = function (callback) {
   const result = [];
 
   for (let index = 0; index < this.length; index++) {
-    if (!!callback(this[index], index, this)) {
+    if (callback(this[index], index, this)) {
       result.push(this[index]);
     }
   }
