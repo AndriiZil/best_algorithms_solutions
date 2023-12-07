@@ -1,19 +1,23 @@
 'use strict';
 
+const nums = [1, 5, 5, 9];
+const objects = [{ value: 1 }, { value: 2 }];
+
 Array.prototype.myFind = function (callback) {
-  const result = [];
+  let result;
 
   for (let index = 0; index < this.length; index++) {
     if (callback(this[index], index, this)) {
-      result.push(this[index]);
+      result = this[index];
     }
   }
 
-  return result[0];
+  return result;
 }
 
-const example = [{ x: 1 }, { x: 2 }, { x: 3 }];
+console.log(nums.myFind((n) => n === 9)); // 9
+console.log(nums.myFind((n) => n === 4)); // undefined
 
-const result = example.myFind((val) => val.x === 3);
+console.log(objects.myFind((ob) => ob.value === 1)); // { value: 1 }
+console.log(objects.myFind((ob) => ob.value === 3)); // undefined
 
-console.log(result); // { x: 3 }

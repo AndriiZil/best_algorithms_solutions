@@ -1,5 +1,8 @@
 'use strict';
 
+const nums = [1, 5, 5, 9];
+const objects = [{ value: 1 }, { value: 2 }];
+
 Array.prototype.myFilter = function (callback) {
   const result = [];
 
@@ -12,10 +15,5 @@ Array.prototype.myFilter = function (callback) {
   return result;
 }
 
-const example = [{ x: 1 }, { x: 2 }, { x: 3 }];
-
-const result = example.myFilter((val) => val.x > 1);
-const result2 = example.myFilter((val) => val.x < 3);
-
-console.log(result); // [ { x: 2 }, { x: 3 } ]
-console.log(result2); // [ { x: 1 }, { x: 2 } ]
+console.log(nums.myFilter((num) => num > 5)); // [ 9 ]
+console.log(objects.myFilter((ob) => ob.value === 2)); // => [ { value: 2 } ]

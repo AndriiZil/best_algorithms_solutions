@@ -50,4 +50,3 @@ const fibonacciMemo = (function () {
 })();
 
 fibonacciMemo(125);
-fibonacciMemo(125);
