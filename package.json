@@ -4,7 +4,7 @@
   "description": "## Array - Uniq items - Update object by id - Remove object by id - Merge array into object - Group objects by property name - Flat - Sort by pair - Delete duplicates - Compare - Intersection - Flatten - Max frequency - Is subset - Fibonacci - Chunk - Reduce - Binary search - Return the largest numbers in array - Falsy bouncer - Diff two arrays - Seek & Destroyed - Wherefore Art Thou",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "start:dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
