@@ -9,7 +9,8 @@ const cars = [
   { id: 2, name: 'BMW' },
   { id: 3, name: 'Audi' },
   { id: 4, name: 'Opel' },
-]
+];
+
 console.log(updateObjectById(cars, 4, {id: 4, name: 'Skoda'}));
 /**
  * [

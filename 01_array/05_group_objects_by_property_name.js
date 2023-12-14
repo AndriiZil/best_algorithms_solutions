@@ -11,11 +11,13 @@ const array = [
 
 function groupByPropName(array, propName) {
   return array.reduce((acc, val) => {
-    if (propName in val && !acc[val[propName]]) {
-      acc[val[propName]] = [];
+    const propertyName = val[propName]
+
+    if (propName in val && !acc[propertyName]) {
+      acc[propertyName] = [];
     }
     if (propName in val) {
-      acc[val[propName]].push(val);
+      acc[propertyName].push(val);
     }
 
     return acc;
