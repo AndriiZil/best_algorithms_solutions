@@ -1,7 +1,7 @@
 {
   "name": "best_algorithms_solutions",
   "version": "1.0.0",
-  "description": "## Array - Uniq items - Update object by id - Remove object by id - Merge array into object - Group objects by property name - Flat - Sort by pair - Delete duplicates - Compare - Intersection - Flatten - Max frequency - Is subset - Fibonacci - Chunk - Reduce - Binary search - Return the largest numbers in array - Falsy bouncer - Diff two arrays - Seek & Destroyed - Wherefore Art Thou",
+  "description": "The best algorithms solutions",
   "main": "index.js",
   "scripts": {
     "start:dev": "nodemon index.js"
