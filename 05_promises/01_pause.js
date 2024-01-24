@@ -3,8 +3,9 @@
 const pause = (ms) => new Promise(r => setTimeout(r, ms));
 
 const fn = async () => {
-  await pause(500);
-  console.log('finish');
+  console.log('before pause...');
+  await pause(1000);
+  console.log('after pause...');
 }
 
-fn();
+fn().catch(console.error);

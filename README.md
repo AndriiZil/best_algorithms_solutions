@@ -1,5 +1,7 @@
 # Best Algorithms Solutions
 
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+
 ## Array
 - Uniq items
 - Update object by id
@@ -23,14 +25,20 @@
 - Diff two arrays
 - Seek & Destroyed
 - Wherefore Art Thou
+- Binary search
+- Count occurrences
+- Pluck
+- Sort by specific property
 
 ## Object
 - Delete property by name
 - Compare
+- Check if object is empty
+- Convert object to query params
 
 ## String
 - Reverse string
-- Capitalize firs latter
+- Capitalize first letter
 - Count vowels
 - Remove duplicates
 - Capitalize all strings
@@ -51,6 +59,8 @@
 - Spinal tap case
 - Missing letter
 - Is Balanced
+- Snack to camel case
+- Check if email is valid
 
 ## Function
 - Map

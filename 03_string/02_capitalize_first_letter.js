@@ -1,7 +1,12 @@
 'use strict';
 
-function capitalize(string) {
+function capitalizeA(string) {
   return string[0].toUpperCase() + string.slice(1);
 }
 
-console.log(capitalize('oksana')); // Oksana
+function capitalizeB(word) {
+  return `${word.charAt(0).toUpperCase()}${word.slice(1)}`;
+}
+
+console.log(capitalizeA('oksana')); // Oksana
+console.log(capitalizeB('oksana')); // Oksana
