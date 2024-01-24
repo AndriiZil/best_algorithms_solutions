@@ -35,6 +35,8 @@
 - Compare
 - Check if object is empty
 - Convert object to query params
+- Invert keys and values
+- Remove null and undefined values
 
 ## String
 - Reverse string
@@ -69,8 +71,14 @@
 
 ## Promise
 - Pause
+- Check function if is it promise
 
 ## Mathematic
 - Convert celsius to fahrenheit
 - Factorial
 - Sum all numbers in a range
+
+## Dates
+- Get current time in format HH:MM:SS
+- If date is valid
+- Day diff
