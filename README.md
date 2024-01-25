@@ -10,7 +10,7 @@
 - Group objects by property name
 - Flat
 - Sort by pair
-- Delete duplicates
+- Get unique from source
 - Compare
 - Intersection
 - Flatten

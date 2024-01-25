@@ -1,5 +1,13 @@
 'use strict';
 
+const arr = [
+  'fgg',
+  'asd', 'asd',
+  'eer', 'eer',
+  'fds', 'fds', 'fds',
+  'eew','eew','eew','eew',
+];
+
 function maxFrequency(array) {
   const map = {};
   let maxFreq = 0
@@ -15,12 +23,12 @@ function maxFrequency(array) {
     }
 
     if (map[element] > maxFreq) {
-      maxFreq = map[element];
       maxFreqString = element;
+      maxFreq = map[element];
     }
   }
 
   return maxFreqString;
 }
 
-console.log(maxFrequency(['asd', 'asd', 'fds', 'fgg', 'eew', 'eer', 'eer'])); // asd
+console.log(maxFrequency(arr)); // eew

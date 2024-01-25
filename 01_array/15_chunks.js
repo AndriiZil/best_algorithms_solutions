@@ -1,5 +1,6 @@
 'use strict';
 
+const testArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 function chunk1(array, size) {
   const chunked = [];
   let index = 0;
@@ -11,12 +12,6 @@ function chunk1(array, size) {
 
   return chunked;
 }
-
-const testArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-console.log(chunk1(testArray, 2)); // [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ], [ 7, 8 ], [ 9, 10 ] ]
-console.log(chunk1(testArray, 4)); // [ [ 1, 2, 3, 4 ], [ 5, 6, 7, 8 ], [ 9, 10 ] ]
-
 
 function chunks(array, size) {
   const results = [];
@@ -34,6 +29,9 @@ function chunks(array, size) {
 
   return results;
 }
+console.log(chunk1(testArray, 2)); // [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ], [ 7, 8 ], [ 9, 10 ] ]
+console.log(chunk1(testArray, 4)); // [ [ 1, 2, 3, 4 ], [ 5, 6, 7, 8 ], [ 9, 10 ] ]
+console.log(chunk1(testArray, 3)); // [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ], [ 10 ] ]
 
 console.log(chunks(testArray, 2)); // [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ], [ 7, 8 ], [ 9, 10 ] ]
 console.log(chunks(testArray, 4)); // [ [ 1, 2, 3, 4 ], [ 5, 6, 7, 8 ], [ 9, 10 ] ]
