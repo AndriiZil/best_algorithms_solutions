@@ -68,6 +68,9 @@
 - Map
 - Filter
 - Find
+- Every
+- Reduce
+- Sort
 
 ## Promise
 - Pause
