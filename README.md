@@ -29,6 +29,7 @@
 - Count occurrences
 - Pluck
 - Sort by specific property
+- Apply transform over each element in array
 
 ## Object
 - Delete property by name
@@ -85,3 +86,7 @@
 - Get current time in format HH:MM:SS
 - If date is valid
 - Day diff
+
+## Closure
+- Equal or not equal
+- Counter
