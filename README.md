@@ -30,6 +30,7 @@
 - Pluck
 - Sort by specific property
 - Apply transform over each element in array
+- Reduce array
 
 ## Object
 - Delete property by name
