@@ -65,6 +65,7 @@
 - Is Balanced
 - Snack to camel case
 - Check if email is valid
+- Get unique char
 
 ## Function
 - Map
@@ -82,6 +83,7 @@
 - Convert celsius to fahrenheit
 - Factorial
 - Sum all numbers in a range
+- Memoization
 
 ## Dates
 - Get current time in format HH:MM:SS
