@@ -31,6 +31,7 @@
 - Sort by specific property
 - Apply transform over each element in array
 - Reduce array
+- Prototype last
 
 ## Object
 - Delete property by name
@@ -74,6 +75,7 @@
 - Every
 - Reduce
 - Sort
+- Prototype
 
 ## Promise
 - Pause
@@ -84,6 +86,7 @@
 - Factorial
 - Sum all numbers in a range
 - Memoization
+- Calculator
 
 ## Dates
 - Get current time in format HH:MM:SS
