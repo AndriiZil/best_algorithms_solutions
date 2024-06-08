@@ -96,3 +96,6 @@
 ## Closure
 - Equal or not equal
 - Counter
+
+## Classes
+- EventEmitter
