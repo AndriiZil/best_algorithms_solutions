@@ -73,14 +73,22 @@ TimeLimitedCache.prototype.get = function(key) {
 };
 
 TimeLimitedCache.prototype.count = function() {
+  const now = Date.now();
+
+  for (const key in this) {
+    if (this[key] && this[key].duration < now) {
+      delete this[key];
+    }
+  }
+
   return Object.keys(this).length;
 };
 
 
 const timeLimitedCache = new TimeLimitedCache();
-console.log(timeLimitedCache.set(1, 42, 50));
-console.log(timeLimitedCache.set(1, 50, 100));
-console.log(timeLimitedCache.get(1));
-console.log(timeLimitedCache.get(1));
-console.log(timeLimitedCache.get(1));
+console.log(timeLimitedCache.set(0, 2, 200));
+console.log(timeLimitedCache.set(10, 20, 400));
+console.log(timeLimitedCache.count());
+console.log(timeLimitedCache.count());
+console.log(timeLimitedCache.count());
 console.log(timeLimitedCache.count());
