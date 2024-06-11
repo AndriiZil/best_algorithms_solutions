@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * Given two arrays arr1 and arr2, return a new array joinedArray. All the objects in each of the two inputs arrays will

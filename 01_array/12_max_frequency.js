@@ -1,18 +1,18 @@
-"use strict";
+'use strict';
 
 const arr = [
-  "fgg",
-  "asd",
-  "asd",
-  "eer",
-  "eer",
-  "fds",
-  "fds",
-  "fds",
-  "eew",
-  "eew",
-  "eew",
-  "eew",
+  'fgg',
+  'asd',
+  'asd',
+  'eer',
+  'eer',
+  'fds',
+  'fds',
+  'fds',
+  'eew',
+  'eew',
+  'eew',
+  'eew',
 ];
 
 function maxFrequency(array) {

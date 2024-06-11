@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 function whatIsInAName(collection, source) {
   let result = [];
@@ -13,11 +13,11 @@ function whatIsInAName(collection, source) {
 console.log(
   whatIsInAName(
     [
-      { first: "Romeo", last: "Montague" },
-      { first: "Mercutio", last: null },
-      { first: "Tybalt", last: "Capulet" },
+      { first: 'Romeo', last: 'Montague' },
+      { first: 'Mercutio', last: null },
+      { first: 'Tybalt', last: 'Capulet' },
     ],
-    { last: "Capulet" },
+    { last: 'Capulet' },
   ),
 ); // [{ first: "Tybalt", last: "Capulet" }]
 

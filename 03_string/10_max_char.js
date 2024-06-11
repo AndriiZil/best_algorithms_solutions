@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 function getMaxChar(string) {
   const charMap = {};
@@ -23,4 +23,4 @@ function getMaxChar(string) {
   return maxChar;
 }
 
-console.log(getMaxChar("Super string is present there now")); // e
+console.log(getMaxChar('Super string is present there now')); // e

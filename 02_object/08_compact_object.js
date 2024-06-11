@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * Given an object or array obj, return a compact object.
@@ -27,34 +27,40 @@
  */
 
 const compactObject = function (obj) {
-  let result = [];
-
   if (Array.isArray(obj)) {
-    obj.forEach((element) => {
+    return obj.reduce((acc, element) => {
       if (Array.isArray(element)) {
-        result.push(element.filter(Boolean));
+        const nested = compactObject(element);
+        acc.push(nested);
+      } else if (element && typeof element === 'object') {
+        const nestedObj = compactObject(element);
+        acc.push(nestedObj);
       } else if (Boolean(element)) {
-        result.push(element);
+        acc.push(element);
       }
-    });
-  } else {
-    const map = Object.entries(obj);
-    const filtered = [];
-
-    map.forEach(([key, value]) => {
+      return acc;
+    }, []);
+  } else if (obj && typeof obj === 'object') {
+    return Object.entries(obj).reduce((acc, [key, value]) => {
       if (Array.isArray(value)) {
-        filtered.push([key, value.filter(Boolean)]);
-      } else if (!Array.isArray(value) && Boolean(value)) {
-        filtered.push([key, value]);
+        const nested = compactObject(value);
+        acc[key] = nested;
+      } else if (value && typeof value === 'object') {
+        const nestedObj = compactObject(value);
+        acc[key] = nestedObj;
+      } else if (Boolean(value)) {
+        acc[key] = value;
       }
-    });
-
-    return Object.fromEntries(filtered);
+      return acc;
+    }, {});
   }
-
-  return result;
+  return obj;
 };
 
 console.log(compactObject([null, 0, false, 1])); // [ 1 ]
 console.log(compactObject({ a: null, b: [false, 1] })); // { b: [ 1 ] }
 console.log(compactObject([null, 0, 5, [0], [false, 16]])); // [ 5, [], [ 16 ] ]
+console.log(compactObject([0, 1, 0, [[[null, 0], false], false], false])); // [1,[[[]]]]
+console.log(
+  compactObject([[[0]], true, false, {}, [], '', 42, 232, 4242, 942]),
+); // [[[]],true,{},[],42,232,4242,942]

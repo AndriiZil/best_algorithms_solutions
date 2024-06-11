@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * Design an EventEmitter class. This interface is similar (but with some differences) to the one found in Node.js or the Event Target interface of the DOM. The EventEmitter should allow for subscribing to events and emitting them.
@@ -91,7 +91,7 @@ class EventEmitter {
 
 // Subscribe to the onClick event with onClickCallback
 const emitter = new EventEmitter();
-const sub1 = emitter.subscribe("firstEvent", (x) => x + 1);
-const sub2 = emitter.subscribe("firstEvent", (x) => x + 2);
+const sub1 = emitter.subscribe('firstEvent', (x) => x + 1);
+const sub2 = emitter.subscribe('firstEvent', (x) => x + 2);
 sub1.unsubscribe(); // This will now correctly remove the specific callback
-console.log(emitter.emit("firstEvent", [5])); // should return [7]
+console.log(emitter.emit('firstEvent', [5])); // should return [7]

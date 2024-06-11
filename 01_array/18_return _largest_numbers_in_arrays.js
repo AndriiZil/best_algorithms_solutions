@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 function largestOfFour(arr) {
   return arr.reduce((acc, val) => {

@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 function isSubset(source, subset) {
   return subset.every((item) => source.includes(item));

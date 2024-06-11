@@ -1,13 +1,13 @@
-"use strict";
+'use strict';
 
 function isBalanced(string) {
-  const start = "({[";
-  const end = ")}]";
+  const start = '({[';
+  const end = ')}]';
 
   const map = {
-    "}": "{",
-    "]": "[",
-    ")": "(",
+    '}': '{',
+    ']': '[',
+    ')': '(',
   };
 
   const queue = [];
@@ -28,5 +28,5 @@ function isBalanced(string) {
   return !queue.length;
 }
 
-console.log(isBalanced("({}){()[([])]}"));
-console.log(isBalanced("{)[]"));
+console.log(isBalanced('({}){()[([])]}'));
+console.log(isBalanced('{)[]'));

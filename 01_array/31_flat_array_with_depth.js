@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * Given a multi-dimensional array arr and a depth n, return a flattened version of that array.

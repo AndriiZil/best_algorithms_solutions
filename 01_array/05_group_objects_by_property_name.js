@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const array = [
   { id: 1, score: 4 },
@@ -24,7 +24,7 @@ function groupByPropName(array, propName) {
   }, {});
 }
 
-console.log(groupByPropName(array, "id"));
+console.log(groupByPropName(array, 'id'));
 /**
  * {
  *  '1': [ { id: 1, score: 4 }, { id: 1, value: 43 } ],
@@ -33,7 +33,7 @@ console.log(groupByPropName(array, "id"));
  * }
  */
 
-console.log(groupByPropName(array, "score"));
+console.log(groupByPropName(array, 'score'));
 /**
  * {
  *   '4': [ { id: 1, score: 4 } ],
@@ -42,7 +42,7 @@ console.log(groupByPropName(array, "score"));
  * }
  */
 
-console.log(groupByPropName(array, "value"));
+console.log(groupByPropName(array, 'value'));
 /**
  * {
  *   '12': [ { id: 3, value: 12 } ],

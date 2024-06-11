@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * The function must accept an indeterminate number of arguments, also known as a variadic function. You can access
@@ -12,29 +12,29 @@ function destroyer(arr) {
 
 console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3)); // 1, 1
 console.log(destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3)); // [1, 5, 1]
-console.log(destroyer(["tree", "hamburger", 53], "tree", 53)); // ['hamburger']
+console.log(destroyer(['tree', 'hamburger', 53], 'tree', 53)); // ['hamburger']
 console.log(
   destroyer(
     [
-      "possum",
-      "trollo",
+      'possum',
+      'trollo',
       12,
-      "safari",
-      "hotdog",
+      'safari',
+      'hotdog',
       92,
       65,
-      "grandma",
-      "bugati",
-      "trojan",
-      "yacht",
+      'grandma',
+      'bugati',
+      'trojan',
+      'yacht',
     ],
-    "yacht",
-    "possum",
-    "trollo",
-    "safari",
-    "hotdog",
-    "grandma",
-    "bugati",
-    "trojan",
+    'yacht',
+    'possum',
+    'trollo',
+    'safari',
+    'hotdog',
+    'grandma',
+    'bugati',
+    'trojan',
   ),
 ); // [ 12, 92, 65 ]

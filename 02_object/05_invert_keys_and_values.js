@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 function invert(obj) {
   return Object.fromEntries(
@@ -6,4 +6,4 @@ function invert(obj) {
   );
 }
 
-console.log(invert({ name: "Andrii", age: 38 })); // { '38': 'age', Andrii: 'name' }
+console.log(invert({ name: 'Andrii', age: 38 })); // { '38': 'age', Andrii: 'name' }

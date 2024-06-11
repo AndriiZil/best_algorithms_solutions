@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 function convertCtoF(celsius) {
   const result = celsius * 1.8 + 32;

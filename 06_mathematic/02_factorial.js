@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 function factorialize(num) {
   if (num < 1) return 0;

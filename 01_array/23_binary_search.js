@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 function binarySearch(array, targetElement) {
   let left = 0;

@@ -1,9 +1,9 @@
-"use strict";
+'use strict';
 
 const friends = [
-  { name: "Anna", books: ["Essential Grammar in Use", "Turkish TV"] },
-  { name: "Andrii", books: ["Tom Soyer", "The Lord of the Rings"] },
-  { name: "Lara", books: ["The Reader"] },
+  { name: 'Anna', books: ['Essential Grammar in Use', 'Turkish TV'] },
+  { name: 'Andrii', books: ['Tom Soyer', 'The Lord of the Rings'] },
+  { name: 'Lara', books: ['The Reader'] },
 ];
 
 function groupBooks(array) {
@@ -11,7 +11,7 @@ function groupBooks(array) {
     (acc, val) => {
       return [...acc, ...val.books];
     },
-    ["First Book"],
+    ['First Book'],
   );
 }
 

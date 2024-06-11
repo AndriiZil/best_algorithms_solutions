@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const arr1 = [1, 2, 3, 4, 7, 9];
 const arr2 = [2, 3, 6, 4, 2, 5];

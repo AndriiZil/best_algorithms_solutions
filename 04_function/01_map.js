@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const nums = [1, 5, 5, 9];
 const objects = [{ value: 1 }, { value: 2 }];

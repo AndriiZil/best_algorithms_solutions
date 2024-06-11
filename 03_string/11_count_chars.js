@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 function countChars(string) {
   const charMap = {};
@@ -17,7 +17,7 @@ function countChars(string) {
   }
 }
 
-countChars("hello world");
+countChars('hello world');
 /**
  * Char h, Count: 1 times
  * Char e, Count: 1 times

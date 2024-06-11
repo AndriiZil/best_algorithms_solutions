@@ -1,10 +1,10 @@
-"use strict";
+'use strict';
 
 const obj = {
-  name: "Ted",
+  name: 'Ted',
   age: null,
   address: undefined,
-  city: "Krakow",
+  city: 'Krakow',
 };
 
 function removeNullUndefined1(obj) {

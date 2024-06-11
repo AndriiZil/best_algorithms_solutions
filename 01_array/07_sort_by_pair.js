@@ -1,9 +1,9 @@
-"use strict";
+'use strict';
 
 const array = [
-  ["a", 1],
-  ["b", 2],
-  ["c", 3],
+  ['a', 1],
+  ['b', 2],
+  ['c', 3],
 ];
 
 function sortByPair(array) {

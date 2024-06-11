@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 Array.prototype.myReduce = function (callback, initialValue) {
   let accumulator = initialValue === undefined ? undefined : initialValue;

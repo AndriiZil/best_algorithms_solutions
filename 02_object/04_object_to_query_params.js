@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 function objectToQueryParams(obj) {
   return Object.entries(obj)
@@ -6,7 +6,7 @@ function objectToQueryParams(obj) {
       ([key, value]) =>
         `${encodeURIComponent(key)}=${encodeURIComponent(value)}`,
     )
-    .join("&");
+    .join('&');
 }
 
-console.log(objectToQueryParams({ name: "Andrii", age: 38 })); // name=Andrii&age=38
+console.log(objectToQueryParams({ name: 'Andrii', age: 38 })); // name=Andrii&age=38

@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 function binarySearch(array, target) {
   let start = 0;
@@ -9,7 +9,7 @@ function binarySearch(array, target) {
   }
 
   while (true) {
-    console.count("searchCount");
+    console.count('searchCount');
 
     if (target === array[start]) {
       return start;

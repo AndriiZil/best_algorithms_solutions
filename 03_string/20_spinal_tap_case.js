@@ -1,11 +1,11 @@
-"use strict";
+'use strict';
 
 function spinalCase(str) {
   return str
-    .split(" ")
+    .split(' ')
     .map((w) => w.toLowerCase())
-    .join("-");
+    .join('-');
 }
 
-console.log(spinalCase("This Is Spinal Tap"));
-console.log(spinalCase("thisIsSpinalTap"));
+console.log(spinalCase('This Is Spinal Tap'));
+console.log(spinalCase('thisIsSpinalTap'));
