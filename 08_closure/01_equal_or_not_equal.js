@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * Write a function expect that helps developers test their code. It should take in any value val and return an object
@@ -30,12 +30,12 @@
 function expect(value) {
   return {
     toBe(val) {
-      return val === value ? { value: true } : { error: 'Not Equal' };
+      return val === value ? { value: true } : { error: "Not Equal" };
     },
     notToBe(val) {
-      return val !== value ? { value: true } : { error: 'Equal' };
-    }
-  }
+      return val !== value ? { value: true } : { error: "Equal" };
+    },
+  };
 }
 
 console.log(expect(5).toBe(5)); // { value: true }

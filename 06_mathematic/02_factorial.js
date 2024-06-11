@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 function factorialize(num) {
   if (num < 1) return 0;
@@ -13,7 +13,7 @@ function factorialize(num) {
   return result;
 }
 
-const factorial = num => num <= 1 ? 1 : num * factorial(num - 1);
+const factorial = (num) => (num <= 1 ? 1 : num * factorial(num - 1));
 
 console.log(factorialize(1)); // 1
 console.log(factorialize(5)); // => 120

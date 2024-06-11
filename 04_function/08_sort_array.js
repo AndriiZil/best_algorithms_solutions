@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * Given an array arr and a function fn, return a sorted array sortedArr. You can assume fn only returns numbers and those numbers determine the sort order of sortedArr. sortedArray must be sorted in ascending order by fn output.
@@ -26,10 +26,10 @@
 
 const func1 = (x) => x;
 
-const sortBy = function(arr, fn) {
+const sortBy = function (arr, fn) {
   return arr.sort((a, b) => {
     return fn(a) - fn(b);
-  })
+  });
 };
 
 console.log(sortBy([5, 4, 1, 2, 3], func1));

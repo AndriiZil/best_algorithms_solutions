@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * Design a Calculator class. The class should provide the mathematical operations of addition, subtraction, multiplication,
@@ -49,7 +49,7 @@ class Calculator {
     this.value = value;
   }
 
-  add(value){
+  add(value) {
     this.value += value;
     return this;
   }
@@ -66,7 +66,7 @@ class Calculator {
 
   divide(value) {
     if (value === 0) {
-      throw new Error('Division by zero is not allowed');
+      throw new Error("Division by zero is not allowed");
     } else {
       this.value /= value;
     }

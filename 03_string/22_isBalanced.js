@@ -1,13 +1,13 @@
-'use strict';
+"use strict";
 
 function isBalanced(str) {
-  const start = '({[';
-  const end = '])}';
+  const start = "({[";
+  const end = "])}";
 
   const map = {
-    '}': '{',
-    ']': '[',
-    ')': '(',
+    "}": "{",
+    "]": "[",
+    ")": "(",
   };
 
   const queue = [];
@@ -28,8 +28,8 @@ function isBalanced(str) {
   return !queue.length;
 }
 
-console.log(isBalanced('(x + y) - (4)')); // true
-console.log(isBalanced('(((10) ()) ((?)(:)))')); // true
-console.log(isBalanced('[{()}]')); // true
-console.log(isBalanced('(50)(')); // false
-console.log(isBalanced('[{]}')); // false
+console.log(isBalanced("(x + y) - (4)")); // true
+console.log(isBalanced("(((10) ()) ((?)(:)))")); // true
+console.log(isBalanced("[{()}]")); // true
+console.log(isBalanced("(50)(")); // false
+console.log(isBalanced("[{]}")); // false

@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 const nums = [1, 5, 5, 9];
 const objects = [{ value: 1 }, { value: 2 }];
@@ -13,7 +13,7 @@ Array.prototype.myFilter = function (callback) {
   }
 
   return result;
-}
+};
 
 console.log(nums.myFilter((num) => num > 5)); // [ 9 ]
 console.log(objects.myFilter((ob) => ob.value === 2)); // => [ { value: 2 } ]

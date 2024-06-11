@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
 function countVowels(string) {
-  const vowels = 'aouieu';
+  const vowels = "aouieu";
   let count = 0;
 
   for (let char of string) {
@@ -13,4 +13,4 @@ function countVowels(string) {
   return count;
 }
 
-console.log(countVowels('sodjdufben')); // 3
+console.log(countVowels("sodjdufben")); // 3

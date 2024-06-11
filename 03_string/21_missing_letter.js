@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * Find the missing letter in the passed letter range and return it.
@@ -6,7 +6,7 @@
  */
 
 function fearNotLetter(str) {
-  const letters = 'abcdefghijklmnopqrstuvwxyz';
+  const letters = "abcdefghijklmnopqrstuvwxyz";
   const firstLetterIndex = letters.indexOf(str[0]);
   const substring = letters.slice(firstLetterIndex);
 
@@ -17,8 +17,8 @@ function fearNotLetter(str) {
   }
 }
 
-console.log(fearNotLetter('abce')); // d
-console.log(fearNotLetter('abcdefghjklmno')); // i
-console.log(fearNotLetter('stvwx')); // u
-console.log(fearNotLetter('bcdf')); // e
-console.log(fearNotLetter('abcdefghijklmnopqrstuvwxyz')); // undefined
+console.log(fearNotLetter("abce")); // d
+console.log(fearNotLetter("abcdefghjklmno")); // i
+console.log(fearNotLetter("stvwx")); // u
+console.log(fearNotLetter("bcdf")); // e
+console.log(fearNotLetter("abcdefghijklmnopqrstuvwxyz")); // undefined

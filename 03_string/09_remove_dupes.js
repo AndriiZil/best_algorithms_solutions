@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 function removeDupes(string) {
   const result = [];
@@ -13,12 +13,12 @@ function removeDupes(string) {
     }
   }
 
-  return result.join('')
+  return result.join("");
 }
 
 function removeDupes2(string) {
-  return [...new Set(string)].join('');
+  return [...new Set(string)].join("");
 }
 
-console.log(removeDupes('podosaodooguuuufas')); // podsaguf
-console.log(removeDupes2('podosaodooguuuufas')); // podsaguf
+console.log(removeDupes("podosaodooguuuufas")); // podsaguf
+console.log(removeDupes2("podosaodooguuuufas")); // podsaguf

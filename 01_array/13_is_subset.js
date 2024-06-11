@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
 function isSubset(source, subset) {
-  return subset.every(item => source.includes(item));
+  return subset.every((item) => source.includes(item));
 }
 
 function isSubset2(source, subset) {
@@ -13,7 +13,7 @@ function isSubset2(source, subset) {
     const index = source.indexOf(subset[i]);
 
     if (index === -1) {
-      return false
+      return false;
     }
 
     delete source[index];

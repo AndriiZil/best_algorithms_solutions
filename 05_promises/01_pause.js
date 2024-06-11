@@ -1,11 +1,11 @@
-'use strict';
+"use strict";
 
-const pause = (ms) => new Promise(r => setTimeout(r, ms));
+const pause = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const fn = async () => {
-  console.log('before pause...');
+  console.log("before pause...");
   await pause(1000);
-  console.log('after pause...');
-}
+  console.log("after pause...");
+};
 
 fn().catch(console.error);

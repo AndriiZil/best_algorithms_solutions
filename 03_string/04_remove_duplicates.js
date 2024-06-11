@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 function removeDuplicates1(string) {
   const chars = [];
@@ -11,12 +11,12 @@ function removeDuplicates1(string) {
     }
   }
 
-  return chars.join('');
+  return chars.join("");
 }
 
 function removeDuplicates2(string) {
-  return Array.from(new Set(string)).join('');
+  return Array.from(new Set(string)).join("");
 }
 
-console.log(removeDuplicates1('oasjdsdgnkjdkdoqejgfmnjdfmfkas')); // oasjdgnkqefm
-console.log(removeDuplicates2('oasjdsdgnkjdkdoqejgfmnjdfmfkas')); // oasjdgnkqefm
+console.log(removeDuplicates1("oasjdsdgnkjdkdoqejgfmnjdfmfkas")); // oasjdgnkqefm
+console.log(removeDuplicates2("oasjdsdgnkjdkdoqejgfmnjdfmfkas")); // oasjdgnkqefm

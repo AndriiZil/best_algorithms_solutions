@@ -1,20 +1,22 @@
-'use strict';
+"use strict";
 
 const obj = {
-  name: 'Ted',
+  name: "Ted",
   age: null,
   address: undefined,
-  city: 'Krakow',
+  city: "Krakow",
 };
 
 function removeNullUndefined1(obj) {
-  return Object.fromEntries(Object.entries(obj).filter(([_, value]) => Boolean(value)));
+  return Object.fromEntries(
+    Object.entries(obj).filter(([_, value]) => Boolean(value)),
+  );
 }
 
 function removeNullUndefined2(obj) {
   return Object.entries(obj).reduce((acc, [key, val]) => {
     if (!!val) {
-      acc[key] = val
+      acc[key] = val;
     }
     return acc;
   }, {});

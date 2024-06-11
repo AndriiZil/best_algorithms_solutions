@@ -3,7 +3,7 @@
  * If there are no elements in the array, it should return -1.
  */
 
-Array.prototype.last = function() {
+Array.prototype.last = function () {
   if (this.length > 0) {
     return this[this.length - 1];
   } else {

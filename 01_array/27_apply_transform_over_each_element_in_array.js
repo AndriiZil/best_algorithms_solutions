@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * Given an integer array arr and a mapping function fn, return a new array with a transformation applied to each element.
@@ -26,11 +26,17 @@
  * Explanation: The function always returns 42.
  */
 
-function plusone(n) { return n + 1 };
-function plusI(n, i) { return n + i };
-function constant() { return 42 };
+function plusone(n) {
+  return n + 1;
+}
+function plusI(n, i) {
+  return n + i;
+}
+function constant() {
+  return 42;
+}
 
-const map = function(arr, fn) {
+const map = function (arr, fn) {
   let index = 0;
   let result = [];
 

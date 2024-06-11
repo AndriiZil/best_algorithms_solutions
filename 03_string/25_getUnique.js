@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
 function getUnique(string) {
-  const collection = string.split('').reduce((acc, val) => {
+  const collection = string.split("").reduce((acc, val) => {
     if (acc[val]) {
       acc[val] += 1;
     } else {
@@ -22,5 +22,5 @@ function getUnique(string) {
   return result;
 }
 
-console.log(getUnique('aabbccdde')); // e
-console.log(getUnique('aabbccddeeeffg')); // g
+console.log(getUnique("aabbccdde")); // e
+console.log(getUnique("aabbccddeeeffg")); // g

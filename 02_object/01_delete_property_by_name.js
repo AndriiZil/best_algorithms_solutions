@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
 const user = {
-  name: 'Andrii',
+  name: "Andrii",
   age: 30,
-  country: 'Ukraine',
-}
+  country: "Ukraine",
+};
 
 const { country, ...cleanedUser } = user;
 

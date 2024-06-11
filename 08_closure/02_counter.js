@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * Write a function createCounter. It should accept an initial integer init. It should return an object with three functions.
@@ -34,8 +34,8 @@ function createCounter(init) {
     reset() {
       value = initValue;
       return value;
-    }
-  }
+    },
+  };
 }
 
 const counter = createCounter(0);

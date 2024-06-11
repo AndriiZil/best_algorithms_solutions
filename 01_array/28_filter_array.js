@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * Given an integer array arr and a filtering function fn, return a filtered array filteredArr.
@@ -34,11 +34,17 @@
  * Falsey values such as 0 should be filtered out
  */
 
-function greaterThan10(n) { return n > 10; };
-function firstIndex(n, i) { return i === 0; };
-function plusOne(n) { return n + 1 };
+function greaterThan10(n) {
+  return n > 10;
+}
+function firstIndex(n, i) {
+  return i === 0;
+}
+function plusOne(n) {
+  return n + 1;
+}
 
-const filter = function(arr, fn) {
+const filter = function (arr, fn) {
   const result = [];
 
   for (let i = 0; i < arr.length; i++) {

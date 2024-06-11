@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * Write a class that allows getting and setting key-value pairs, however a time until expiration is associated with each key.
@@ -45,9 +45,9 @@
  * At t=250, count() returns 0 because the cache is empty.
  */
 
-const TimeLimitedCache = function() {};
+const TimeLimitedCache = function () {};
 
-TimeLimitedCache.prototype.set = function(key, value, duration) {
+TimeLimitedCache.prototype.set = function (key, value, duration) {
   const now = Date.now();
 
   if (!this[key]) {
@@ -57,10 +57,9 @@ TimeLimitedCache.prototype.set = function(key, value, duration) {
     this[key] = { value: value, duration: now + duration };
     return true;
   }
-
 };
 
-TimeLimitedCache.prototype.get = function(key) {
+TimeLimitedCache.prototype.get = function (key) {
   const now = Date.now();
 
   if (this[key] && this[key].duration > now) {
@@ -72,7 +71,7 @@ TimeLimitedCache.prototype.get = function(key) {
   return -1;
 };
 
-TimeLimitedCache.prototype.count = function() {
+TimeLimitedCache.prototype.count = function () {
   const now = Date.now();
 
   for (const key in this) {
@@ -83,7 +82,6 @@ TimeLimitedCache.prototype.count = function() {
 
   return Object.keys(this).length;
 };
-
 
 const timeLimitedCache = new TimeLimitedCache();
 console.log(timeLimitedCache.set(0, 2, 200));

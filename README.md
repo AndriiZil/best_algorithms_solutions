@@ -3,6 +3,7 @@
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ## Array
+
 - Uniq items
 - Update object by id
 - Remove object by id
@@ -32,16 +33,21 @@
 - Apply transform over each element in array
 - Reduce array
 - Prototype last
+- Join Two Arrays By ID
+- Flat Array with Depth
 
 ## Object
+
 - Delete property by name
 - Compare
 - Check if object is empty
 - Convert object to query params
 - Invert keys and values
 - Remove null and undefined values
+- Compact Object
 
 ## String
+
 - Reverse string
 - Capitalize first letter
 - Count vowels
@@ -69,6 +75,7 @@
 - Get unique char
 
 ## Function
+
 - Map
 - Filter
 - Find
@@ -78,10 +85,12 @@
 - Prototype
 
 ## Promise
+
 - Pause
 - Check function if is it promise
 
 ## Mathematic
+
 - Convert celsius to fahrenheit
 - Factorial
 - Sum all numbers in a range
@@ -89,13 +98,16 @@
 - Calculator
 
 ## Dates
+
 - Get current time in format HH:MM:SS
 - If date is valid
 - Day diff
 
 ## Closure
+
 - Equal or not equal
 - Counter
 
 ## Classes
+
 - EventEmitter

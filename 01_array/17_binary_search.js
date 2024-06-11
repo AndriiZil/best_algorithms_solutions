@@ -1,15 +1,15 @@
-'use strict';
+"use strict";
 
 function binarySearch(array, target) {
   let start = 0;
   let end = array.length - 1; // index of last element
 
   if (target < array[start] || target > array[end]) {
-    return - 1;
+    return -1;
   }
 
   while (true) {
-    console.count('searchCount');
+    console.count("searchCount");
 
     if (target === array[start]) {
       return start;

@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 function countOccurrences(arr, value) {
   return arr.reduce((acc, val) => {
@@ -9,4 +9,4 @@ function countOccurrences(arr, value) {
   }, 0);
 }
 
-console.log(countOccurrences(['Yes', 'Yes', 'No', 'Yes'], 'Yes')); // 3
+console.log(countOccurrences(["Yes", "Yes", "No", "Yes"], "Yes")); // 3

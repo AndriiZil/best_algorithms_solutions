@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 const arr1 = [{ id: 1 }, { id: 2 }];
 const arr2 = [{ id: 1 }, { id: 2 }];

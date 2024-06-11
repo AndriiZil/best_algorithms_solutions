@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 function fibonacci(n) {
   const seq = [1, 1];
 
-  console.time('Compute time');
+  console.time("Compute time");
 
   if (seq.length < 2) {
     return console.log(seq.slice(0, n));
@@ -16,7 +16,7 @@ function fibonacci(n) {
     seq.push(last + prev);
   }
 
-  console.timeEnd('Compute time');
+  console.timeEnd("Compute time");
 
   return console.log(seq);
 }
@@ -27,11 +27,11 @@ const fibonacciMemo = (function () {
   const seq = [1, 1];
 
   return function (n) {
-    console.time('Compute FiboMemo:');
+    console.time("Compute FiboMemo:");
 
     if (seq.length >= n) {
-      console.log('No Compute');
-      console.timeEnd('Compute FiboMemo:');
+      console.log("No Compute");
+      console.timeEnd("Compute FiboMemo:");
       return console.log(seq.slice(0, n));
     }
 
@@ -40,13 +40,13 @@ const fibonacciMemo = (function () {
       const prev = seq[seq.length - 2];
 
       seq.push(last + prev);
-      console.log('Pushed:', last);
+      console.log("Pushed:", last);
     }
 
-    console.timeEnd('Compute FiboMemo:');
+    console.timeEnd("Compute FiboMemo:");
 
     return console.log(seq);
-  }
+  };
 })();
 
 fibonacciMemo(125);
