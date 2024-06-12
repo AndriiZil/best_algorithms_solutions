@@ -73,6 +73,11 @@
 - Snack to camel case
 - Check if email is valid
 - Get unique char
+- Merge two strings
+- Greatest common divisor of string
+- Reverse vowels of a string
+- Reverse words in a string
+- Compress string
 
 ## Function
 
@@ -88,6 +93,7 @@
 
 - Pause
 - Check function if is it promise
+- Promise all function
 
 ## Mathematic
 
