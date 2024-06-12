@@ -38,6 +38,7 @@
 - Move zeros
 - Kids with the greatest number
 - Can place flowers
+- Increasing triplet
 
 ## Object
 
