@@ -35,6 +35,9 @@
 - Prototype last
 - Join Two Arrays By ID
 - Flat Array with Depth
+- Move zeros
+- Kids with the greatest number
+- Can place flowers
 
 ## Object
 
@@ -78,6 +81,7 @@
 - Reverse vowels of a string
 - Reverse words in a string
 - Compress string
+- Is subsequence
 
 ## Function
 
