@@ -93,6 +93,8 @@
 - Reduce
 - Sort
 - Prototype
+- Sort array
+- Function composition
 
 ## Promise
 
