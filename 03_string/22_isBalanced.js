@@ -33,3 +33,31 @@ console.log(isBalanced('(((10) ()) ((?)(:)))')); // true
 console.log(isBalanced('[{()}]')); // true
 console.log(isBalanced('(50)(')); // false
 console.log(isBalanced('[{]}')); // false
+
+// ----------------------------------------------------------
+
+function isBalanced2(string) {
+  if (string.length % 2 !== 0) {
+    return false;
+  }
+
+  const map = ['{}', '[]', '()'];
+  const results = [];
+  const len = string.length / 2;
+
+  for (let i = 0; i < len; i++) {
+    const first = string[i];
+    const last = string[string.length - (i + 1)];
+
+    const el = `${first}${last}`;
+    results.push(map.includes(el));
+  }
+
+  return results.every((res) => res === true);
+}
+
+console.log(isBalanced2('[{()}]')); // => true
+console.log(isBalanced2('([{}])')); // => true
+console.log(isBalanced2('{[()]}')); // => true
+console.log(isBalanced2('[{(}}]')); // => false
+console.log(isBalanced2('[([])}')); // => false
