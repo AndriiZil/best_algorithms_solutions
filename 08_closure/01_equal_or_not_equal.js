@@ -40,3 +40,4 @@ function expect(value) {
 
 console.log(expect(5).toBe(5)); // { value: true }
 console.log(expect(5).toBe(null)); // { error: 'Not Equal' }
+console.log(expect(5).notToBe(4)); // { value: true }

@@ -24,3 +24,18 @@ function getUnique(string) {
 
 console.log(getUnique('aabbccdde')); // e
 console.log(getUnique('aabbccddeeeffg')); // g
+
+// ---------------------------------------------------------------
+
+function getUniques(string) {
+  let result = '';
+
+  for (let i = 0; i < string.length; i++) {
+    const elementIndex = string.split('').findIndex((el) => el === string[i]);
+    if (!string.slice(elementIndex + 1).includes(string[i])) {
+      result += string[i];
+    }
+  }
+
+  return result;
+}
