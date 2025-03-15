@@ -2,6 +2,8 @@
 
 const notPromise = {};
 
+function simple() {}
+
 const myPromise = Promise.resolve('promise');
 
 function isPromise(obj) {
@@ -14,3 +16,4 @@ function isPromise(obj) {
 
 console.log(isPromise(notPromise)); // false
 console.log(isPromise(myPromise)); // true
+console.log(isPromise(simple)); // false
