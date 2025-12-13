@@ -24,31 +24,6 @@ console.log(twoSum([2, 7, 16, 15, 12], 18));
  * {
  *   [2] = 0;
  *   [7] = 1;
- *   []
+ *   [], 18-16 = 2 // Result = objIndices[18 - 16], Result i (current index)
  * }
  */
-
-// ========================================================
-
-const array = [2, 7, 16, 15, 12];
-
-function twoSum(arr, target) {
-  let count = 0;
-  const table = {};
-  let sum;
-
-  for (let i = 1; i < arr.length; i++) {
-    if (count <= arr.length) {
-      sum = arr[count] + arr[i];
-      if (sum === target) {
-        table[sum] = [count, i];
-      }
-    }
-
-    count++;
-  }
-
-  return table[target];
-}
-
-console.log(twoSum(array, 27));
