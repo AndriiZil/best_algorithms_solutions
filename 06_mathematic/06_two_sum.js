@@ -24,6 +24,6 @@ console.log(twoSum([2, 7, 16, 15, 12], 18));
  * {
  *   [2] = 0;
  *   [7] = 1;
- *   [], 18-16 = 2 // Result = objIndices[18 - 16], Result i (current index)
+ *   [], 18-16 = 2 // Result = objIndices[18 - 16 = 2]: 0, Result i (current index) = 2 because 18 - 16 = i == 2
  * }
  */
